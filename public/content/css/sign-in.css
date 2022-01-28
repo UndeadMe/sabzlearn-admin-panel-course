@@ -1,4 +1,5 @@
 @import url(../../components/custom/custom.css);
+@import url(../../components/forms/forms.css);
 
 body {
     position: relative;
@@ -39,6 +40,10 @@ body::after {
     width: 450px;
     height: 550px;
     background: var(--white);
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .wrap::before {
     content: '';
@@ -51,4 +56,26 @@ body::after {
     background: var(--main-color);
     border-radius: 0 0 50px 50px;
     z-index: -1;
+}
+.wrap-title {
+    font-size: 1.8rem;
+}
+.wrap-description {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: var(--primary-color);
+    margin-left: -30px;
+}
+.wrap-description a {
+    text-decoration: none;
+    margin-left: 8px;
+}
+/* ! ---------------------------------- form ---------------------------------- ! */
+.form-login {
+    width: 100%;
+    padding: 0 9px;
+    margin-top: 50px;
+}
+.password-group {
+    margin-top: 25px;
 }

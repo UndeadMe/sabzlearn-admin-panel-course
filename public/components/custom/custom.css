@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url(../reset-css/reset.css);
 
 :root {
     --white: #ffffff;
     --main-color: #676879;
+    --primary-color:#204559;
     
+
+    /* semantic colors */
+    --green: #389800;
+    --red: #CE0000;
     /* gradients */
     --blue-to-black-gradient: linear-gradient(to bottom, rgba(42,78,92, 0.3) 30%, black 100%);
+}
+body {
+    font-family: 'Comfortaa', cursive ;
 }
