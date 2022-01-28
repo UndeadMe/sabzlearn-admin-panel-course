@@ -130,3 +130,16 @@ body::after {
     width: 35px;
     height: 35px;
 }
+.submit-form-btn {
+    width: 100%;
+    margin-top: 70px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-family: 'Comfortaa', cursive !important;
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
