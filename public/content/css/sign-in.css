@@ -143,3 +143,9 @@ body::after {
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
+/* ! ------------------------------- media query ------------------------------ ! */
+@media screen and ( max-height: 666px ) {
+    body {
+        padding: 100px 0;
+    }
+}
