@@ -29,7 +29,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 47px;
+    left: 50px;
     cursor: text;
     color: var(--primary-color);
     transition: .3s;
