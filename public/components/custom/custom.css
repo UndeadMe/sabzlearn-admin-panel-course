@@ -1,0 +1,6 @@
+@import url(../reset-css/reset.css);
+
+:root {
+    /* gradients */
+    --blue-to-black-gradient: linear-gradient(to bottom, rgba(42,78,92, 0.3) 30%, black 100%);
+}
