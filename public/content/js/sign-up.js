@@ -43,3 +43,4 @@ const verify = (e) => {
 }
 
 verifySubmit.addEventListener("click", (e) => verify(e))
+eyeElem.addEventListener("click", () => eye.checkEye())
