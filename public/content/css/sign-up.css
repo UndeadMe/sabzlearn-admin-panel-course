@@ -92,11 +92,94 @@ body::after {
     border: none;
     outline: none;
     font-size: 1.1rem;
-    font-family: 'Comfortaa', cursive !important;
     background-color: var(--main-color);
     color: var(--white);
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
+/* ! ---------------------------- verify code wrap ---------------------------- ! */
+.verify-code-wrap {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.verify-code-wrap::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+}
+.verify-code-box {
+    width: 530px;
+    height: 400px;
+    background: var(--white);
+    z-index: 11;
+    padding: 50px;
+    transform: translateY(-500px);
+    transition: .5s;
+}
+.verify-code-title {
+    font-size: 2rem;
+}
+.verify-code-text {
+    margin-top: 23px;
+    line-height: 23px;
+    color: #808080;
+}
+.verify-code-wrap.active {
+    visibility: visible;
+    opacity: 1;
+}
+.verify-code-wrap.active .verify-code-box {
+    transform: translateY(0);
+}
+/* ! -------------------------------- input box ------------------------------- ! */
+.inputs-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.verify-input {
+    width: 80px;
+    height: 60px;
+    background: var(--white-900);
+    border: 2px solid #AFAFAF;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.verify-input:focus {
+    border: 2px solid var(--primary-color);
+}
+.resend-text {
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+.verify-submit-btn {
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    color: var(--white);
+    box-shadow: 0 5px 15px rgb(103, 104, 121, 0.7);
+    cursor: pointer;
 }
 /* ! ------------------------------- media query ------------------------------ ! */
 @media screen and ( max-height: 666px ) {

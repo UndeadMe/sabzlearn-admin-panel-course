@@ -92,7 +92,6 @@ body::after {
     border: none;
     outline: none;
     font-size: 1.1rem;
-    font-family: 'Comfortaa', cursive !important;
     background-color: var(--main-color);
     color: var(--white);
     cursor: pointer;

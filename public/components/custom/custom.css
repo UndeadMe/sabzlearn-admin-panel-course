@@ -3,8 +3,9 @@
 
 :root {
     --white: #ffffff;
+    --white-900: #F5F5F5;
     --main-color: #676879;
-    --primary-color:#204559;
+    --primary-color:#133141;
 
     /* semantic colors */
     --green: #389800;
@@ -12,8 +13,10 @@
     /* gradients */
     --blue-to-black-gradient: linear-gradient(to bottom, rgba(42,78,92, 0.3) 30%, black 100%);
 }
-body {
+* {
     font-family: 'Comfortaa', cursive !important;
+}
+body {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
