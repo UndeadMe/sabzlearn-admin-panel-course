@@ -6,7 +6,9 @@ SECRET_KEY = 'django-insecure-3%&i#*tbavv6gjd5jocyp^jsvw#*xwn(l_1=170tmkz3py4*)6
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+AUTH_USER_MODEL = 'user.User'
 
 INSTALLED_APPS = [
     # Default App
@@ -22,6 +24,15 @@ INSTALLED_APPS = [
     # 3rd Apps
     'rest_framework'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
