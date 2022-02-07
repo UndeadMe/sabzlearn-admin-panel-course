@@ -9,6 +9,7 @@ class User(AbstractBaseUser):
     f_name = models.CharField(verbose_name="first name", db_column="f_name", max_length=80, default="None")
     l_name = models.CharField(verbose_name="last name", db_column="l_name", max_length=80, default="None")
     image = models.ImageField(verbose_name="profile image", db_column="image", upload_to="/")
+    banner = models.ImageField(verbose_name="profile banner", db_column="banner", upload_to="/")
 
     is_active = models.BooleanField(verbose_name="user is active?", db_column="is_active", default=True)
     is_admin = models.BooleanField(verbose_name="user is admin?", db_column="is_admin", default=False)
