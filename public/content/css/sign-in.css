@@ -79,6 +79,13 @@ body::after {
 .password-group {
     margin-top: 25px;
 }
+/* ! ------------------------- forget password section ------------------------ ! */
+.forget-pass-section {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: blue;
+}
 /* ! --------------------------- sign in with border -------------------------- ! */
 .sign-in-with-border-box {
     margin-top: 40px;
