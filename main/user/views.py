@@ -1,4 +1,13 @@
 from rest_framework.views import APIView
+from rest_framework_simplejwt.views import TokenObtainPairView
+
+from .serializers import (
+    MTOPSerializer
+)
+
+
+class MTOPView(TokenObtainPairView):
+    serializer_class = MTOPSerializer
 
 
 class LoginView(APIView):
