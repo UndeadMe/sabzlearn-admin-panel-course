@@ -4,12 +4,15 @@
 :root {
     --white: #ffffff;
     --white-900: #F5F5F5;
+    --white-800: #9da8b8;
     --main-color: #676879;
     --primary-color:#133141;
+    --blue: #009CF0;
 
     /* semantic colors */
     --green: #389800;
     --red: #CE0000;
+    --yellow: #FFC300;
     /* gradients */
     --blue-to-black-gradient: linear-gradient(to bottom, rgba(42,78,92, 0.3) 30%, black 100%);
 }
