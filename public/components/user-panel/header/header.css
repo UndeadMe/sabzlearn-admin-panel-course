@@ -1,0 +1,89 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background: var(--white);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.profile-container {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.user-profile {
+    width: 70px;
+    height: 70px;
+    outline: 1px solid #F6DF00;
+    box-shadow: rgb(246, 223, 0, 0.6) 0px 8px 32px;
+}
+.user-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.user-id {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.user-email {
+    color: var(--white-800);
+    font-size: 0.9rem;
+}
+.detail-box {
+    display: flex;
+}
+.detail-btn {
+    padding: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.detail-btn:not(:first-child) {
+    margin-left: 25px;
+}
+.them-btn {
+    background-color: var(--yellow);
+    box-shadow: rgba(255, 196, 0, 0.5) 0px 8px 24px;
+}
+.them-btn:active {
+    box-shadow: 0 0 0 rgba(255, 196, 0, 0.5);
+}
+.notif-btn {
+    position: relative;
+    background: var(--main-color);
+    box-shadow: rgba(103, 104, 121, 0.7) 0px 8px 24px;
+}
+.notif-span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--white);
+    background: var(--green);
+    padding: 3px 5px;
+    transform: translate(5px, -5px);
+}
+.sign-out-btn {
+    background: var(--blue);
+    box-shadow: rgb(0, 156, 240, 0.5) 0px 8px 24px;
+    padding: 0 15px;
+}
+.sign-out-btn svg {
+    transform: rotate(180deg);
+}
+.sign-out-btn span {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    color: var(--white);
+}
