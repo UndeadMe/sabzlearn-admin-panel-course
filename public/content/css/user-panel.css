@@ -1,16 +1,35 @@
 @import url(../../components/custom/custom.css);
 @import url(../../components/user-panel/header/header.css);
+@import url(../../components/user-panel/user-card/user-card.css);
 
 body {
-    background: #EBEBEB;
+    background: #f0f0f0;
     width: 100%;
     min-height: 100vh;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 /* ! -------------------------------- container ------------------------------- ! */
 .container {
     width: 100%;
     height: 100%;
-    padding: 80px;
+    padding: 60px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+/* ! ---------------------------------- main ---------------------------------- ! */
+.main {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+}
+/* ! ------------------------------- right wrap ------------------------------- ! */
+.right-wrap {
+    flex: 3;
+    height: 100%;
+    max-width: 955px;
 }
