@@ -12,10 +12,15 @@
 
     /* semantic colors */
     --green: #389800;
+    --light-green: #00FF43;
+    --gray: #B4ACAC;
     --red: #CE0000;
     --yellow: #FFC300;
     --dark-blue: #000EFF;
     --orange: #FF9100;
+
+    /* border */
+    --golden-border: 1px solid #F6DF00;
     
     /* gradients */
     --blue-to-black-gradient: linear-gradient(to bottom, rgba(42,78,92, 0.3) 30%, black 100%);

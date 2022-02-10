@@ -1,7 +1,9 @@
 .user-card {
     flex: 1.2;
     max-width: 381px;
+    max-height: 615px;
     box-shadow: var(--shadow);
+    background: var(--white);
 }
 .user-card-profile-container {
     height: 180px;
