@@ -19,6 +19,9 @@
     
     /* gradients */
     --blue-to-black-gradient: linear-gradient(to bottom, rgba(42,78,92, 0.3) 30%, black 100%);
+
+    /* shadow */
+    --shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
 * {
     font-family: 'Comfortaa', cursive !important;
