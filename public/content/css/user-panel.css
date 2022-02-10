@@ -1,6 +1,7 @@
 @import url(../../components/custom/custom.css);
 @import url(../../components/user-panel/header/header.css);
 @import url(../../components/user-panel/user-card/user-card.css);
+@import url(../../components/user-panel/search-bar/search.css);
 
 body {
     background: #f0f0f0;
@@ -49,12 +50,17 @@ body {
     column-gap: 10px;
     font-size: 1.3rem;
     color: var(--primary-color);
+    cursor: pointer;
 }
 .user-box-active-tab {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 25px;
     background: var(--blue);
     width: 105px;
-    height: 2px;
+    height: 1px;
+}
+/* ! ------------------------------ users section ----------------------------- ! */
+.users-section {
+    padding: 50px;
 }
