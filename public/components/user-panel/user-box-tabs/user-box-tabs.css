@@ -11,13 +11,15 @@
     justify-content: center;
     column-gap: 10px;
     font-size: 1.3rem;
-    color: var(--primary-color);
     cursor: pointer;
+}
+.user-box-tab a {
+    color: var(--primary-color);
 }
 .user-box-active-tab {
     position: absolute;
     bottom: -1px;
-    left: 25px;
+    left: 28px;
     background: var(--blue);
     width: 105px;
     height: 1px;

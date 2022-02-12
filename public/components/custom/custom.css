@@ -31,6 +31,9 @@
 * {
     font-family: 'Comfortaa', cursive !important;
 }
+a {
+    text-decoration: none;
+}
 .dark-blue {
     color: var(--dark-blue);
 }

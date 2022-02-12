@@ -87,3 +87,6 @@
 .distrub-status {
     background: var(--red);
 }
+.offline-status {
+    background: var(--gray);
+}
