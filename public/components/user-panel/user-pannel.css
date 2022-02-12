@@ -1,0 +1,33 @@
+body {
+    background: #f0f0f0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* ! -------------------------------- container ------------------------------- ! */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+/* ! ---------------------------------- main ---------------------------------- ! */
+.main {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+}
+/* ! -------------------------------- user box -------------------------------- ! */
+.user-box {
+    flex: 3;
+    height: 100%;
+    max-width: 955px;
+    box-shadow: var(--shadow);
+    background-color: var(--white);
+}

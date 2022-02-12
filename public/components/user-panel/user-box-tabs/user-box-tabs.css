@@ -1,0 +1,24 @@
+.user-box-tabs {
+    display: flex;
+    column-gap: 40px;
+    padding: 20px 30px 15px 30px;
+    border-bottom: 1px solid var(--white-700);
+    position: relative;
+}
+.user-box-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.user-box-active-tab {
+    position: absolute;
+    bottom: -1px;
+    left: 25px;
+    background: var(--blue);
+    width: 105px;
+    height: 1px;
+}
