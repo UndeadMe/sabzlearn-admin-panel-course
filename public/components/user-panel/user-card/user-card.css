@@ -1,7 +1,9 @@
 .user-card {
     flex: 1.2;
     max-width: 381px;
-    box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    max-height: 615px;
+    box-shadow: var(--shadow);
+    background: var(--white);
 }
 .user-card-profile-container {
     height: 180px;
@@ -81,6 +83,7 @@
     color: var(--white);
     font-size: 1rem;
     box-shadow: rgb(0, 156, 240, 0.4) 0px 8px 24px;
+    cursor: pointer;
 }
 .change-info-btn svg {
     margin-right: 15px;

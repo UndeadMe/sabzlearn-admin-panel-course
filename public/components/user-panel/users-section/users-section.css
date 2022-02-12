@@ -1,0 +1,15 @@
+@import url(../user-pannel.css);
+@import url(../search-bar/search.css);
+@import url(../user-box/user-box.css);
+
+.users-section {
+    padding: 50px;
+    width: 100%;
+    transition: .4s;
+}
+.users-wrap {
+    margin-top: 30px;
+    height: 380px;
+    overflow: auto;
+    padding: 0 10px;
+}

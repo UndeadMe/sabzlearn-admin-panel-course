@@ -1,6 +1,9 @@
-@import url(../../components/custom/custom.css);
-@import url(../../components/user-panel/header/header.css);
-@import url(../../components/user-panel/user-card/user-card.css);
+/* this file include custom and user box and user card and header */
+/* ! I import all files that a simple user panel need */
+@import url(../custom/custom.css);
+@import url(user-card/user-card.css);
+@import url(header/header.css);
+@import url(user-box-tabs/user-box-tabs.css);
 
 body {
     background: #f0f0f0;
@@ -27,9 +30,11 @@ body {
     justify-content: space-between;
     column-gap: 80px;
 }
-/* ! ------------------------------- right wrap ------------------------------- ! */
-.right-wrap {
+/* ! -------------------------------- user box -------------------------------- ! */
+.user-box {
     flex: 3;
     height: 100%;
     max-width: 955px;
+    box-shadow: var(--shadow);
+    background-color: var(--white);
 }

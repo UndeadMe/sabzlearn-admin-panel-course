@@ -1,0 +1,8 @@
+@import url(../user-pannel.css);
+@import url(../users-section/users-section.css);
+
+.user-box-active-tab {
+    width: 150px;
+    left: 357px;
+    background: var(--blue);
+}
