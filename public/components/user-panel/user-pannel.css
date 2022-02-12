@@ -1,3 +1,10 @@
+/* this file include custom and user box and user card and header */
+/* ! I import all files that a simple user panel need */
+@import url(../custom/custom.css);
+@import url(user-card/user-card.css);
+@import url(header/header.css);
+@import url(user-box-tabs/user-box-tabs.css);
+
 body {
     background: #f0f0f0;
     width: 100%;
