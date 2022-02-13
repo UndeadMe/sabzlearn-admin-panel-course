@@ -57,7 +57,7 @@ input:-webkit-autofill:active{
 }
 /* ! -------------------------------- messages -------------------------------- ! */
 .message {
-    margin-top: 12px;
+    margin-top: 9px;
     display: flex;
     align-items: center;
 }
