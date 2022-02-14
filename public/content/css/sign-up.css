@@ -97,6 +97,10 @@ body::after {
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
 }
+.submit-form-btn:disabled {
+    background: var(--black);
+    box-shadow: none;
+}
 /* ! ---------------------------- verify code wrap ---------------------------- ! */
 .verify-code-wrap {
     position: fixed;

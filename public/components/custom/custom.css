@@ -11,13 +11,14 @@
     --blue: #009CF0;
 
     /* semantic colors */
-    --green: #389800;
+    --green: #41b300;
     --light-green: #00FF43;
     --gray: #B4ACAC;
     --red: #CE0000;
     --yellow: #FFC300;
     --dark-blue: #000EFF;
     --orange: #FF9100;
+    --black: #000000;
 
     /* border */
     --golden-border: 1px solid #F6DF00;
