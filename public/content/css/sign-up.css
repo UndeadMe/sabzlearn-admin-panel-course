@@ -193,6 +193,7 @@ body::after {
     color: var(--white);
     box-shadow: 0 5px 15px rgb(103, 104, 121, 0.7);
     cursor: pointer;
+    transition: .4s;
 }
 .verify-submit-btn:disabled {
     box-shadow: none;

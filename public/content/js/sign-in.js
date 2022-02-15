@@ -48,6 +48,20 @@ const validateInputs = (inpElm, regexPattern, successMsg, errMsg) => {
     }
 }
 
+//? submit and fetch data
+const submit = async () => {
+    const headerSetting = {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ username: usernameInput.value, password: passwordInput.value }),
+        redirect: 'follow'
+    }
+    const response = await fetch("http://127.0.0.1:8000/user/login/", headerSetting)
+    const responseJson = await response.json()
+}
+
 usernameInput.addEventListener("keyup", (e) => validateInputs(e.target, /^[a-zA-Z0-9]+$/, "successful", "Please don't use any special charachters"))
 passwordInput.addEventListener("keyup", (e) => validateInputs(e.target, /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "successful", "Please enter your email correctly"))
 
@@ -56,6 +70,7 @@ form.addEventListener("submit", (e) => {
     
     if (validateAllInputs()) {
         submitFormBtn.disabled = false
+        submit()
     } else 
         submitFormBtn.disabled = true
 })
