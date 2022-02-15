@@ -69,6 +69,7 @@ body::after {
 .wrap-description a {
     text-decoration: none;
     margin-left: 8px;
+    color: var(--dark-blue);
 }
 /* ! ---------------------------------- form ---------------------------------- ! */
 .form-login {
@@ -84,7 +85,7 @@ body::after {
     margin-top: 15px;
     font-size: 0.9rem;
     cursor: pointer;
-    color: blue;
+    color: var(--dark-blue);
 }
 /* ! --------------------------- sign in with border -------------------------- ! */
 .sign-in-with-border-box {
@@ -103,6 +104,11 @@ body::after {
     color: var(--white);
     cursor: pointer;
     box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+}
+.submit-form-btn:disabled {
+    background: var(--black);
+    cursor: no-drop;
+    box-shadow: none;
 }
 /* ! ------------------------------- media query ------------------------------ ! */
 @media screen and ( max-height: 666px ) {
