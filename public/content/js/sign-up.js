@@ -148,11 +148,9 @@ const setSuccessFor = (elm, successMsg) => {
 }
 
 //? fetch data function
-const fetchData = async (url, headerSetting = "", msg = "") => {
+const fetchData = async (url, headerSetting) => {
     const response = await fetch(url, headerSetting)
-    if (!response.ok)  throw new Error(msg)
     const responseJson = await response.json()
-    
     return responseJson
 }
 
@@ -166,9 +164,9 @@ const submit = async () => {
         body: JSON.stringify({ username: usernameInput.value, email: emailInput.value, password: passwordInput.value }),
         redirect: "follow"
     }
-        
+
     try {
-        const response = await fetchData("http://127.0.0.1:8000/user/register/code/", headerSetting, "something went wrong please try again")
+        const response = await fetchData("http://127.0.0.1:8000/user/register/code/", headerSetting)
         
         if (response.info === "ok") {
             verifyCodeWrap.classList.add("active")
@@ -230,26 +228,35 @@ const verify = async (e) => {
     e.preventDefault()
     const code = [...document.querySelectorAll('.verify-input')].map(input => input.value).join('')
 
-    if (!isEndTimer) {
-
-        const headerSetting = {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify({ code, }),
-            redirect: "follow"
-        }
-
-        try {
-            const response = await fetchData("http://127.0.0.1:8000/user/register/", headerSetting, "this user already exist")
-            console.log(response)
-        } catch (err) {
-            console.error(err.message)
-        }
-
-    } else
+    if (!isEndTimer)
+        sendEmailCodeAndVerifyEmail(code)
+    else
         verifyCodeErrMsg.innerHTML = "Time is over, resend code again for yourself"
+}
+
+const sendEmailCodeAndVerifyEmail = async (emailCode) => {
+    //? header setting
+    const headerSetting = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ code: emailCode, }),
+        redirect: "follow"
+    }
+    
+    // ? try catch handling errors
+    const response = await fetchData("http://127.0.0.1:8000/user/register/", headerSetting)
+    
+    if (response.hasOwnProperty("error")) {
+        if (response.error.hasOwnProperty("username")) {
+            //? say to user you can't sign up because this user with this username already exist
+        } else if (response.error.hasOwnProperty("email")) {
+            //? say to user you can't sign up because this user with this email already exist
+        }
+    }
+    
+    console.log(response)
 }
 
 verifySubmit.addEventListener("click", (e) => verify(e))
