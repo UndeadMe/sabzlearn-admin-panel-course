@@ -154,7 +154,7 @@ body::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 .verify-input {
     width: 80px;
@@ -173,6 +173,14 @@ body::after {
     margin-top: 20px;
     color: var(--primary-color);
 }
+.resend-code-again-text {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+.verify-code-error-msg {
+    margin: 20px 0 10px 0;
+    color: var(--red);
+}
 .verify-submit-btn {
     width: 100%;
     margin-top: 30px;
@@ -184,6 +192,10 @@ body::after {
     color: var(--white);
     box-shadow: 0 5px 15px rgb(103, 104, 121, 0.7);
     cursor: pointer;
+}
+.verify-submit-btn:disabled {
+    box-shadow: none;
+    background: var(--black);
 }
 /* ! ------------------------------- media query ------------------------------ ! */
 @media screen and ( max-height: 666px ) {

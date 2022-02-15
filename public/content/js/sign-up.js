@@ -8,6 +8,9 @@ const usernameInput = form["username-input"]
 const emailInput = form["email-input"]
 const passwordInput = form["password-input"]
 const submitFormBtn = form["submit-form-btn"]
+const verifyCodeWrap = document.querySelector(".verify-code-wrap")
+const resendText = document.querySelector(".resend-text")
+const verifyCodeErrMsg = document.querySelector(".verify-code-error-msg")
 
 const eye = new Eye(".eye", "#password-input")
 
@@ -39,13 +42,6 @@ inputElements.forEach((ele, index) => {
         }
     })
 })
-
-//? verify code email
-const verify = (e) => {
-    e.preventDefault()
-    const code = [...document.querySelectorAll('.verify-input')].map(input => input.value).join('')
-    console.log(code)
-}
 
 const chkInp = (regexPattern, val) => {
     if (regexPattern.test(val)) 
@@ -151,6 +147,111 @@ const setSuccessFor = (elm, successMsg) => {
     )
 }
 
+//? fetch data function
+const fetchData = async (url, headerSetting = "", msg = "") => {
+    const response = await fetch(url, headerSetting)
+    if (!response.ok)  throw new Error(msg)
+    const responseJson = await response.json()
+    
+    return responseJson
+}
+
+//? submit and fetch data
+const submit = async () => {
+    const headerSetting = {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json",
+        },
+        body: JSON.stringify({ username: usernameInput.value, email: emailInput.value, password: passwordInput.value }),
+        redirect: "follow"
+    }
+        
+    try {
+        const response = await fetchData("http://127.0.0.1:8000/user/register/code/", headerSetting, "something went wrong please try again")
+        
+        if (response.info === "ok") {
+            verifyCodeWrap.classList.add("active")
+            verifyTimer(1, 20)
+        }
+
+    } catch (err) {
+        console.error(err.message)
+    }
+}
+
+let isEndTimer = false
+//? verify code email timer
+const verifyTimer = (minutTime, secondTime) => {
+    isEndTimer = false
+    let minut = minutTime
+    let seconds = secondTime
+    
+    const timer = setInterval(() => {
+        if (seconds.toString().length === 1)
+            resendText.innerHTML = `Resend the code until another 0${minut}:0${seconds}`
+        else
+            resendText.innerHTML = `Resend the code until another 0${minut}:${seconds}`
+
+        if (seconds === 0) {
+            if (seconds === 0 && minut === 0) {
+                clearInterval(timer)
+                minut = 0
+                seconds = 0
+                
+                resendText.innerHTML = ""
+                resendText.append(createResendCodeAgainText())
+
+                isEndTimer = true
+            } else {
+                minut--
+                seconds = 60
+            }
+        } else
+            seconds--
+    }, 1000)
+}
+
+//? create resend verify code text 
+const createResendCodeAgainText = () => {
+    const span = document.createElement("span")
+    span.classList.add("resend-code-again-text")
+    span.addEventListener("click", (e) => {
+        verifyCodeErrMsg.innerHTML = ""
+        e.target.innerHTML = ""
+        submit()
+    })
+    span.innerHTML = "Resend code again"
+    return span
+}
+
+//? verify code email
+const verify = async (e) => {
+    e.preventDefault()
+    const code = [...document.querySelectorAll('.verify-input')].map(input => input.value).join('')
+
+    if (!isEndTimer) {
+
+        const headerSetting = {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify({ code, }),
+            redirect: "follow"
+        }
+
+        try {
+            const response = await fetchData("http://127.0.0.1:8000/user/register/", headerSetting, "this user already exist")
+            console.log(response)
+        } catch (err) {
+            console.error(err.message)
+        }
+
+    } else
+        verifyCodeErrMsg.innerHTML = "Time is over, resend code again for yourself"
+}
+
 verifySubmit.addEventListener("click", (e) => verify(e))
 eyeElem.addEventListener("click", () => eye.checkEye())
 usernameInput.addEventListener("keyup", (e) => validateInputs(e.target, /^[a-zA-Z0-9]+$/, "successful", "Please don't use any special charachters"))
@@ -160,8 +261,9 @@ passwordInput.addEventListener("keyup", (e) => validateInputs(e.target, /^(?=.*\
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     
-    if (validateAllInputs())
+    if (validateAllInputs()) {
         submitFormBtn.disabled = false
-    else 
+        submit()
+    } else 
         submitFormBtn.disabled = true
 })
