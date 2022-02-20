@@ -15,14 +15,56 @@
     padding-left: 20px;
     margin-bottom: 25px;
 }
-.form-border-password {
+.form-border-password, .form-border-profile {
     margin-top: 46px;
 }
-.change-name-box, .change-password-box {
+.change-name-box, .change-password-box, .change-profile-box {
     display: flex;
     column-gap: 20px;
     margin-top: 20px;
 }
+.change-profile-box {
+    column-gap: 50px;
+}
 .first-name-box, .last-name-box, .current-password-box, .new-password-box {
     width: 100%;
+}
+.change-info-section {
+    max-height: 555px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.change-profile-input-box, .change-banner-input-box {
+    position: relative;
+    height: 180px;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+}
+.change-profile-input-box {
+    width: 190px;
+}
+.change-profile-input-box::before, .change-banner-input-box::before {
+    position: absolute;
+    top: -8px;
+    background: var(--white);
+    padding: 0 10px;
+}
+.change-profile-input-box::before {
+    content: "profile";
+    left: 50%;
+    transform: translateX(-50%);
+}
+.change-banner-input-box::before {
+    content: "banner";
+    left: 30px;
+}
+.change-profile-pic, .change-banner-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+.change-banner-input-box {
+    width: 80%;
 }
