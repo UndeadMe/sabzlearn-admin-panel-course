@@ -53,7 +53,7 @@ input:-webkit-autofill:active{
     left: 5px;
 }
 .eye {
-    cursor: pointer;
+    cursor: pointer ;
 }
 /* ! -------------------------------- messages -------------------------------- ! */
 .message {
