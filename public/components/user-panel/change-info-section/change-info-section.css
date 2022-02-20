@@ -68,3 +68,37 @@
 .change-banner-input-box {
     width: 80%;
 }
+.submit-change-info-box {
+    position: relative;
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+}
+.submit-change-info-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: var(--blue);
+}
+.submit-change-info-btn {
+    position: relative;
+    padding: 15px 20px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgb(0, 156, 240, 0.4) 0px 8px 24px;
+}
+.submit-change-info-btn-overlay {
+    padding: 15px;
+    background: var(--white);
+    z-index: 4;
+    margin-left: 30px;
+}
