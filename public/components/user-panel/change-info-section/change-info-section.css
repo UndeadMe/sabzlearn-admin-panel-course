@@ -1,0 +1,28 @@
+@import url(../user-pannel.css);
+@import url(../../form-border/form-border.css);
+@import url(../../forms/forms.css);
+
+.user-box-active-tab {
+    width: 180px;
+    left: 153px;
+    background: var(--blue);
+}
+.change-info-section {
+    padding: 36px 30px;
+}
+.form-border {
+    justify-content: start;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.form-border-password {
+    margin-top: 46px;
+}
+.change-name-box, .change-password-box {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+.first-name-box, .last-name-box, .current-password-box, .new-password-box {
+    width: 100%;
+}

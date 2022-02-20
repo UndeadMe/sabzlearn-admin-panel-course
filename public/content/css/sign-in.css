@@ -111,6 +111,34 @@ body::after {
     cursor: no-drop;
     box-shadow: none;
 }
+/* ! ------------------------------- sign in btn ------------------------------ ! */
+.sign-in-buttons {
+    margin-top: 15px;
+    display: flex;
+    column-gap: 30px;
+}
+.google-btn, .discord-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid var(--gray);
+    padding: 5px;
+    outline: none;
+    background-color: var(--white);
+    border: 1px solid rgb(189, 189, 189);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.3rem;
+    transition: .3s;
+    cursor: pointer;
+}
+.google-btn:hover, .discord-btn:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.google-btn img, .discord-btn img {
+    width: 35px;
+    height: 35px;
+}
 /* ! ------------------------------- media query ------------------------------ ! */
 @media screen and ( max-height: 666px ) {
     body {
