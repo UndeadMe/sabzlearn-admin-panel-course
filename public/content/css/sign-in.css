@@ -2,6 +2,10 @@
 @import url(../../components/forms/forms.css);
 @import url(../../components/form-border/form-border.css);
 
+.form-border {
+    margin: 25px 0;
+}
+
 body {
     position: relative;
     width: 100%;

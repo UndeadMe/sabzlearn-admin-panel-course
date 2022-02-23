@@ -106,14 +106,23 @@ const submit = async () => {
     try {
         const response = await fetchData("http://127.0.0.1:8000/user/register/code/", headerSetting)
         
-        if (response.info === "ok") {
+        if (response.detail === "ok") {
+            console.log(`sign up information situation: ${response.detail}`)
             verifyCodeWrap.classList.add("active")
             verifyTimer(1, 20)
-        }
+        } else throw new Error(response.detail)
 
     } catch (err) {
-        console.error(err.message)
+        fireSwalErr("sorry", `${err.message} please try other username and email `)
     }
+}
+
+const fireSwalErr = (title, errMsg) => {
+    Swal.fire({
+        icon: 'error',
+        title: `${title}`,
+        text: `${errMsg}`,
+    })
 }
 
 let isEndTimer = false
@@ -182,19 +191,23 @@ const sendEmailCodeAndVerifyEmail = async (emailCode) => {
         body: JSON.stringify({ code: emailCode, }),
         redirect: "follow"
     }
+
+    try {
+        const response = await fetchData("http://127.0.0.1:8000/user/register/", headerSetting)
     
-    // ? try catch handling errors
-    const response = await fetchData("http://127.0.0.1:8000/user/register/", headerSetting)
-    
-    if (response.hasOwnProperty("error")) {
-        if (response.error.hasOwnProperty("username")) {
-            //? say to user you can't sign up because this user with this username already exist
-        } else if (response.error.hasOwnProperty("email")) {
-            //? say to user you can't sign up because this user with this email already exist
+        if (response.hasOwnProperty("detail")) {
+            if (response.detail === "Accepted") 
+                location.assign("sign-in.html")
+            else 
+                throw new Error(response.detail)
         }
+        else if (response.hasOwnProperty("code")) 
+            throw new Error(response.code[0]) 
+        else if (response.hasOwnProperty("email")) 
+            throw new Error(response.email[0])
+    } catch(err) {
+        verifyCodeErrMsg.innerHTML = err.message
     }
-    
-    console.log(response)
 }
 
 verifySubmit.addEventListener("click", (e) => verify(e))
