@@ -224,14 +224,15 @@ const sendEmailCodeAndVerifyEmail = async emailCode => {
       headerSetting
     )
 
-    if (response.hasOwnProperty("detail")) {
-      if (response.detail === "Accepted") location.assign("sign-in.html")
-    } else if (response.hasOwnProperty("code"))
+    if (response.hasOwnProperty("detail"))
+      location.assign("sign-in.html")
+    else if (response.hasOwnProperty("code"))
       throw new Error(response.code[0])
     else if (response.hasOwnProperty("email"))
       throw new Error(response.email[0])
+    else (response.hasOwnProperty("non_field_errors"))
+      throw new Error(`${response.non_field_errors[0]}.`)
 
-    console.log(response)
   } catch (err) {
     verifyCodeErrMsg.innerHTML = err.message
   }

@@ -58,12 +58,39 @@ const submit = async () => {
         body: JSON.stringify({ username: usernameInput.value, password: passwordInput.value }),
         redirect: 'follow'
     }
-    const response = await fetch("http://127.0.0.1:8000/user/login/", headerSetting)
-    const responseJson = await response.json()
+    try {
+        const response = await fetch("http://127.0.0.1:8000/user/login/", headerSetting)
+        const responseJson = await response.json()
+        const { access, refresh } = responseJson
+
+        if (responseJson.detail === "No active account found with the given credentials")
+            throw new Error(responseJson.detail[0])
+            
+        store_JWT_tokenInCookie(access, refresh)
+    } catch (err) {
+        fireSwalErr("sorry", `${err.message}`)
+    }
+}
+
+const store_JWT_tokenInCookie = (access, refresh) => {
+    document.cookie = `access_token = ${access}`
+    document.cookie = `refresh_token = ${refresh}`
+    console.log("cookie setted")
+
+    // get all cookie with this command
+    // document.cookie.split(";").map(cookie => cookie.split("="))
 }
 
 usernameInput.addEventListener("keyup", (e) => validateInputs(e.target, /^[a-zA-Z0-9]+$/, "successful", "Please don't use any special charachters"))
-passwordInput.addEventListener("keyup", (e) => validateInputs(e.target, /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "successful", "Please enter your email correctly"))
+passwordInput.addEventListener("keyup", (e) => validateInputs(e.target, /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/, "successful", "Please enter your password correctly"))
+
+const fireSwalErr = (title, errMsg) => {
+    Swal.fire({
+      icon: "error",
+      title: `${title}`,
+      text: `${errMsg}`
+    })
+  }
 
 form.addEventListener("submit", (e) => {
     e.preventDefault()
