@@ -65,7 +65,7 @@ const submit = async () => {
         redirect: 'follow'
     }
     try {
-        const responseJson = fetchData("http://127.0.0.1:8000/user/login/", headerSetting)
+        const responseJson = await fetchData("http://127.0.0.1:8000/user/login/", headerSetting)
         const { access, refresh } = responseJson
 
         if (responseJson.detail === "No active account found with the given credentials")
