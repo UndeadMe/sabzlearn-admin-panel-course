@@ -48,6 +48,12 @@ const validateInputs = (inpElm, regexPattern, successMsg, errMsg) => {
     }
 }
 
+const fetchData = async (url, headerSetting) => {
+    const response = await fetch(url, headerSetting)
+    const responseJson = await response.json()
+    return responseJson
+}
+
 //? submit and fetch data
 const submit = async () => {
     const headerSetting = {
@@ -59,9 +65,7 @@ const submit = async () => {
         redirect: 'follow'
     }
     try {
-        const response = await fetch("http://127.0.0.1:8000/user/login/", headerSetting)
-        const responseJson = await response.json()
-        const { access, refresh } = responseJson
+        const { access, refresh } = fetchData("http://127.0.0.1:8000/user/login/", headerSetting)
 
         if (responseJson.detail === "No active account found with the given credentials")
             throw new Error(responseJson.detail[0])
