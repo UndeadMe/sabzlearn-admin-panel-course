@@ -2,10 +2,12 @@ import { Eye } from "../../components/eye-input/eye-input.js"
 import * as bundle from "./modules/forms/forms.js"
 
 const eyeElem = document.querySelector(".eye")
-const form = document.forms[0]
+const form = document.forms[1]
 const usernameInput = form["username-input"]
 const passwordInput = form["password-input"]
 const submitFormBtn = form["submit-form-btn"]
+const forgetPassWrap = document.querySelector(".forget-password-wrap")
+const forgetPassText = document.querySelector(".forget-pass-section h3")
 const eye = new Eye(".eye", "#password-input")
 
 
@@ -61,7 +63,12 @@ const submit = async () => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({ username: usernameInput.value, password: passwordInput.value }),
+        body: JSON.stringify(
+            { 
+                username: usernameInput.value, 
+                password: passwordInput.value 
+            }
+        ),
         redirect: 'follow'
     }
     try {
@@ -69,7 +76,7 @@ const submit = async () => {
         const { access, refresh } = responseJson
 
         if (responseJson.detail === "No active account found with the given credentials")
-            throw new Error(responseJson.detail[0])
+            throw new Error(responseJson.detail)
             
         store_JWT_tokenInCookie(access, refresh)
     } catch (err) {
@@ -108,3 +115,13 @@ form.addEventListener("submit", (e) => {
 })
 
 eyeElem.addEventListener("click", () => eye.checkEye())
+
+forgetPassText.addEventListener("click", () => {
+    if (forgetPassWrap.classList.contains("active")) forgetPassWrap.classList.remove("active")
+    else forgetPassWrap.classList.add("active")
+})
+
+forgetPassWrap.addEventListener("click", (e) => {
+    if (e.target.classList.contains("forget-password-wrap")) 
+        forgetPassWrap.classList.remove("active")
+})

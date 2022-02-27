@@ -152,33 +152,36 @@ const fireSwalErr = (title, errMsg) => {
 }
 
 let isEndTimer = false
+let timer
 //? verify code email timer
 const verifyTimer = (minutTime, secondTime) => {
   isEndTimer = false
   let minut = minutTime
   let seconds = secondTime
 
-  const timer = setInterval(() => {
+  timer = setInterval(() => {
     if (seconds.toString().length === 1)
       resendText.innerHTML = `Resend the code until another 0${minut}:0${seconds}`
     else
       resendText.innerHTML = `Resend the code until another 0${minut}:${seconds}`
 
-    if (seconds === 0) {
-      if (seconds === 0 && minut === 0) {
-        clearInterval(timer)
-        minut = 0
-        seconds = 0
-
-        resendText.innerHTML = ""
-        resendText.append(createResendCodeAgainText())
-
-        isEndTimer = true
-      } else {
-        minut--
-        seconds = 60
-      }
-    } else seconds--
+    if (verifyCodeWrap.classList.contains("active")) {
+      if (seconds === 0) {
+        if (seconds === 0 && minut === 0) {
+          clearInterval(timer)
+          minut = 0
+          seconds = 0
+  
+          resendText.innerHTML = ""
+          resendText.append(createResendCodeAgainText())
+  
+          isEndTimer = true
+        } else {
+          minut--
+          seconds = 60
+        }
+      } else seconds--
+    }
   }, 1000)
 }
 
@@ -275,4 +278,14 @@ form.addEventListener("submit", e => {
     submitFormBtn.disabled = false
     submit()
   } else submitFormBtn.disabled = true
+})
+
+verifyCodeWrap.addEventListener("click", (e) => {
+  if (e.target.classList.contains("verify-code-wrap")) {
+    clearInterval(timer)
+    verifyCodeWrap.classList.remove("active")
+    resendText.innerHTML = ""
+    verifyCodeErrMsg.innerHTML = ""
+    inputElements.forEach(inp => inp.value = "")
+  }
 })
