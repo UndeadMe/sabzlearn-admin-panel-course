@@ -1,11 +1,11 @@
-.user-card {
+.admin-card {
     flex: 1.2;
     max-width: 381px;
     max-height: 615px;
     box-shadow: var(--shadow);
     background: var(--white);
 }
-.user-card-profile-container {
+.admin-card-profile-container {
     height: 180px;
     background: url(../../../img/banner/banner.png);
     background-position: center;
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     position: relative;
 }
-.user-profile-card {
+.admin-profile-card {
     width: 130px;
     height: 130px;
     position: absolute;
@@ -21,7 +21,7 @@
     left: 50%;
     transform: translate(-50%, 35px);
 }
-.user-profile-card::before {
+.admin-profile-card::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -32,39 +32,39 @@
     transform: scale(1.13);
     z-index: -1;
 }
-.user-profile-card img {
+.admin-profile-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.user-information-container {
+.admin-information-container {
     text-align: center;
     padding: 30px 50px;
 }
-.user-information-container .user-id {
+.admin-information-container .admin-id {
     font-size: 1.3rem;
     margin-top: 40px;
     margin-bottom: 10px;
 }
-.user-information-tables {
+.admin-information-tables {
     width: 100%;
     margin-top: 30px;
 }
-.user-info-box {
+.admin-info-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid var(--white-700);
     padding: 10px;
 }
-.user-info-box span {
+.admin-info-box span {
     display: flex;
     align-items: center;
 }
-.user-info-box span:first-child {
+.admin-info-box span:first-child {
     color: var(--primary-color);
 }
-.user-info-box span svg {
+.admin-info-box span svg {
     margin-right: 15px;
 }
 .change-info-btn-box { 

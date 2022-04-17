@@ -28,6 +28,19 @@
     font-size: 1rem;
     cursor: pointer;
 }
+.user-detail .user-name {
+    color: var(--white-800);
+    font-size: 0.8rem;
+    margin-top: 8px;
+    text-transform: capitalize;
+}
+.user-history {
+    background: var(--dark-blue);
+    color: var(--white);
+    font-size: .8rem;
+    padding: 6px 9px;
+    border-radius: 20px;
+}
 .user-btns-group {
     display: flex;
     align-items: center;

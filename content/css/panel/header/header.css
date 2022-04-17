@@ -13,26 +13,26 @@
     column-gap: 20px;
     align-items: center;
 }
-.user-profile {
+.admin-profile {
     width: 70px;
     height: 70px;
 }
-.user-profile img {
+.admin-profile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.user-detail {
+.admin-detail {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
-.user-id {
+.admin-id {
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--primary-color);
 }
-.user-email {
+.admin-email {
     color: var(--white-800);
     font-size: 0.9rem;
 }
