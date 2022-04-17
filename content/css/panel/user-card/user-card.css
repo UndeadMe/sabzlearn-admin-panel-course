@@ -7,8 +7,8 @@
 }
 .user-card-profile-container {
     height: 180px;
-    background: url(../../../content/img/banner/banner.png);
-    background-position: 0 40%;
+    background: url(../../../img/banner/banner.png);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -69,7 +69,6 @@
 }
 .change-info-btn-box { 
     padding: 0 50px;
-    margin-bottom: 30px;
 }
 .change-info-btn {
     width: 100%;
@@ -77,11 +76,11 @@
     background: var(--blue);
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     border: none;
     outline: none;
     color: var(--white);
-    font-size: 1rem;
+    margin-top: 20px;
     box-shadow: rgb(0, 156, 240, 0.4) 0px 8px 24px;
     cursor: pointer;
 }

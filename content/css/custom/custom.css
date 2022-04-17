@@ -42,6 +42,7 @@ a {
     color: var(--orange);
 }
 body {
+    /* reset user select */
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;

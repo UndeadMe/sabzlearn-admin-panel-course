@@ -1,3 +1,6 @@
+/* ! this file has some classes to helps you to have some form component ! */
+
+/* reset autofill in browsers */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 

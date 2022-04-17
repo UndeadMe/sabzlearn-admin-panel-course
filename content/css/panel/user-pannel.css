@@ -1,5 +1,9 @@
-/* this file include custom and user box and user card and header */
-/* ! I import all files that a simple user panel need */
+/* 
+    - base file for styles of panel
+    this file is a main file for panel
+    this file has every classes and other files that panel needs for work.
+*/
+
 @import url(../custom/custom.css);
 @import url(user-card/user-card.css);
 @import url(header/header.css);
@@ -31,7 +35,7 @@ body {
     column-gap: 80px;
 }
 /* ! -------------------------------- user box -------------------------------- ! */
-.user-box {
+.right-section {
     flex: 3;
     height: 100%;
     max-width: 955px;

@@ -7,9 +7,10 @@
     <title>User Pannel - Banana</title>
 
     <!-- ! -------------------------------- links -------------------------------- ! -->
-    <link rel="stylesheet" href="../../components/user-panel/users-section/users-section.css">
+    <link rel="stylesheet" href="publick//change-info-section/change-info-section.css">
 </head>
 <body>
+    <!-- ! ------------------------------ container ------------------------------ ! -->
     <div class="container">
         <!-- ! ------------------------------- header -------------------------------- ! -->
         <header class="header">
@@ -113,77 +114,127 @@
                     </div>
                     <div class="user-box-tab">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="profile-add" transform="translate(-364 -252)"><path id="Vector" d="M4,0H0" transform="translate(378.5 271.5)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,4V0" transform="translate(380.5 269.5)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M4.6,8.87a1.818,1.818,0,0,0-.33,0,4.435,4.435,0,1,1,.33,0Z" transform="translate(371.56 254)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M6.825,8.63a9.15,9.15,0,0,1-5.01-1.38c-2.42-1.62-2.42-4.26,0-5.87a9.766,9.766,0,0,1,10.01,0" transform="translate(369.165 265.18)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(388 276) rotate(180)" fill="none" opacity="0"/></g></svg>
-                        <a href="user-panel-followers-section.html">Following</a>
+                        <a href="user-panel-following-section.html">Following</a>
                     </div>
                 </div>
 
-                <!-- ! ---------------------------- users section ---------------------------- ! -->
-                <div class="users-section">
-                    <!-- ! --------------------------- user search box --------------------------- ! -->
-                    <div class="user-search-box">
-                        <div class="search-bar">
-                            <span class="search-bar-icon">
-                                <svg id="vuesax_linear_search-normal" data-name="vuesax/linear/search-normal" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><g id="search-normal"><path id="Vector" d="M21.847,10.923A10.923,10.923,0,1,1,10.923,0,10.923,10.923,0,0,1,21.847,10.923Z" transform="translate(2.461 2.461)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path id="Vector-2" data-name="Vector" d="M2.461,2.461,0,0" transform="translate(23.077 23.077)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path id="Vector-3" data-name="Vector" d="M0,0H28V28H0Z" fill="none" opacity="0"/></g></svg>
-                            </span>
-                            <input type="text" class="search-input-bar" name="" spellcheck="false" placeholder="Search User ID">
-                            <span class="search-config-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25"><g id="vuesax_linear_candle-2" data-name="vuesax/linear/candle-2" transform="translate(-428 -252)"><g id="candle-2" transform="translate(428 252)"><path id="Vector" d="M7.749,0H0" transform="translate(16.037 18.229)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M3.321,0H0" transform="translate(2.214 18.229)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M3.321,0H0" transform="translate(20.465 6.771)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M7.749,0H0" transform="translate(2.214 6.771)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M2.214,0H8.856A1.982,1.982,0,0,1,11.07,2.214V4.428A1.982,1.982,0,0,1,8.856,6.642H2.214A1.982,1.982,0,0,1,0,4.428V2.214A1.982,1.982,0,0,1,2.214,0Z" transform="translate(5.332 14.624)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-6" data-name="Vector" d="M2.214,0H8.856A1.982,1.982,0,0,1,11.07,2.214V4.428A1.982,1.982,0,0,1,8.856,6.642H2.214A1.982,1.982,0,0,1,0,4.428V2.214A1.982,1.982,0,0,1,2.214,0Z" transform="translate(9.598 3.734)" fill="none" stroke="var(--main-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-7" data-name="Vector" d="M0,0H26V25H0Z" fill="none" opacity="0"/></g></g></svg>
-                            </span>
+                <!-- ! ------------------------- change info section ------------------------- ! -->
+                <div class="change-info-section">
+                    <!-- ! -------------------------- change info form --------------------------- ! -->
+                    <form action="" method="" id="change-info-form">
+                        
+                        <!-- ! ----------------------------- form border ----------------------------- ! -->
+                        <div class="form-border">
+                            <span class="form-border-text">Change name</span>
                         </div>
-                        <button class="search-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_search-normal" data-name="vuesax/linear/search-normal" transform="translate(212 -428) rotate(90)"><g id="search-normal"><path id="Vector" d="M19,9.5A9.5,9.5,0,1,1,9.5,0,9.5,9.5,0,0,1,19,9.5Z" transform="translate(430 190)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M2,2,0,0" transform="translate(448 208)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(428 188)" fill="none" opacity="0"/></g></g></svg>                              
-                            Search
-                        </button>
-                    </div>
-
-                    <!-- ! ---------------------------- users section ---------------------------- ! -->
-                    <div class="users-wrap">
-                        <!-- ! ------------------------------ user__box ------------------------------ ! -->
-                        <div class="user__box">
-                            <div class="user__box_left">
-                                <div class="user-status online-status"></div>
-                                <img src="../../content/img/profile/banana.png" class="user-profile-box" alt="">
-                                <div class="user-detail">
-                                    <h1 class="user-id">Banana</h1>
-                                    <h1 class="user-email">Arash.k021@yahoo.com</h1>
+                        
+                        <!-- ! --------------------------- change name box --------------------------- ! -->
+                        <div class="change-name-box">
+                            <div class="first-name-box">
+                                <!-- ! ----------------------------- first name ------------------------------ ! -->
+                                <div class="input-group first-name-group">
+                                    <input type="text" class="form-input" name="first-name-input" id="first-name-input" placeholder="nothing" spellcheck="false">
+                                    <label for="first-name-input" class="input-label">first-name</label>
+                                    <span class="input-group-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_text" data-name="vuesax/linear/text" transform="translate(-300 -252)"><g id="text"><path id="Vector" d="M0,3.89V2.07A2.068,2.068,0,0,1,2.07,0H16.59a2.068,2.068,0,0,1,2.07,2.07V3.89" transform="translate(302.67 255.28)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,16.61V0" transform="translate(312 256.11)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H7.88" transform="translate(308.06 272.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(324 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
+                                    </span>
                                 </div>
+                                <h3 class="message valid-message first-name-message">
+                                    <!-- error message or success message -->
+                                </h3>
                             </div>
-
-                            <div class="user-btns-group">
-                                <button class="user-info-btn">
-                                    <svg id="Icon_ionic-md-information" data-name="Icon ionic-md-information" xmlns="http://www.w3.org/2000/svg" width="5.542" height="26.788" viewBox="0 0 5.542 26.788"><path id="Path_1399" data-name="Path 1399" d="M16.312,16.523h5.542V32.342H16.312Z" transform="translate(-16.312 -5.554)" fill="var(--main-color"/><path id="Path_1400" data-name="Path 1400" d="M16.312,9.844h5.542v5.542H16.312Z" transform="translate(-16.312 -9.844)" fill="var(--main-color)"/></svg>
-                                </button>
-                                <button class="user-follow-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_user-add" data-name="vuesax/linear/user-add" transform="translate(-172 -188)"><g id="user-add"><path id="Vector" d="M10,5A5,5,0,1,1,5,0,5,5,0,0,1,10,5Z" transform="translate(179 190)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,7C0,3.13,3.85,0,8.59,0a10.391,10.391,0,0,1,2.76.37" transform="translate(175.41 203)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M8,4a3.594,3.594,0,0,1-.12.93,3.734,3.734,0,0,1-.46,1.13A3.97,3.97,0,0,1,4,8,3.921,3.921,0,0,1,1.34,6.97a3.684,3.684,0,0,1-.76-.91A3.921,3.921,0,0,1,0,4,3.994,3.994,0,0,1,4,0,3.944,3.944,0,0,1,6.97,1.33,3.984,3.984,0,0,1,8,4Z" transform="translate(186 202)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><g id="Group"><path id="Vector-4" data-name="Vector" d="M2.98,0H0" transform="translate(188.51 205.98)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,0V2.99" transform="translate(190 204.52)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></g><path id="Vector-6" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(172 188)" fill="none" opacity="0"/></g></g></svg>
-                                    Follow
-                                </button>
-                            </div>
-                        </div>
-                        <!-- ! ------------------------------ user__box ------------------------------ ! -->
-                        <div class="user__box">
-                            <div class="user__box_left">
-                                <div class="user-status distrub-status"></div>
-                                <img src="../../content/img/profile/banana.png" class="user-profile-box" alt="">
-                                <div class="user-detail">
-                                    <h1 class="user-id">Banana</h1>
-                                    <h1 class="user-email">Arash.k021@yahoo.com</h1>
+                        
+                            <div class="last-name-box">
+                                <!-- ! ------------------------------ last name ------------------------------ ! -->
+                                <div class="input-group last-name-group">
+                                    <input type="text" class="form-input" name="last-name-input" id="last-name-input" placeholder="nothing" spellcheck="false">
+                                    <label for="last-name-input" class="input-label">last-name</label>
+                                    <span class="input-group-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_smallcaps" data-name="vuesax/linear/smallcaps" transform="translate(-364 -252)"><g id="smallcaps"><path id="Vector" d="M0,3.36V1.85A1.852,1.852,0,0,1,1.85,0H14.77a1.852,1.852,0,0,1,1.85,1.85V3.36" transform="translate(365.99 254.57)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,14.78V0" transform="translate(374.3 255.32)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H5.58" transform="translate(370.9 270.1)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H7.01A1.319,1.319,0,0,1,8.33,1.32v.8" transform="translate(377.68 262.34)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,10.56V0" transform="translate(380.08 262.87)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-6" data-name="Vector" d="M0,0H4.28" transform="translate(377.94 273.43)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-7" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(388 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
+                                    </span>
                                 </div>
+                                <h3 class="message valid-message last-name-message">
+                                    <!-- error message or success message -->
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- ! ----------------------------- form border ----------------------------- ! -->
+                        <div class="form-border form-border-password">
+                            <span class="form-border-text">Change password</span>
+                        </div>
+
+                        <!-- ! ------------------------- change password box ------------------------- ! -->
+                        <div class="change-password-box">
+                            <div class="current-password-box">
+                                <!-- ! -------------------------- current password --------------------------- ! -->
+                                <div class="input-group current-password-group">
+                                    <span class="input-group-icon eye current-password-eye">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g id="eye" transform="translate(-108 -188)"><path id="Vector" d="M7.16,3.58A3.58,3.58,0,1,1,3.58,0,3.576,3.576,0,0,1,7.16,3.58Z" transform="translate(116.42 196.42)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M9.785,16.55c3.53,0,6.82-2.08,9.11-5.68a5.326,5.326,0,0,0,0-5.19C16.6,2.08,13.315,0,9.785,0S2.965,2.08.675,5.68a5.326,5.326,0,0,0,0,5.19C2.965,14.47,6.255,16.55,9.785,16.55Z" transform="translate(110.215 191.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(132 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                                    </span>
+                                    <input type="password" class="form-input" name="current-password-input" id="current-password-input" placeholder="nothing" spellcheck="false">
+                                    <label for="current-password-input" class="input-label">current password</label>
+                                    <span class="input-group-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g id="key" transform="translate(-684 -188)"><path id="Vector" d="M17.793,12.923a7.575,7.575,0,0,1-7.6,1.87l-4.71,4.7a1.935,1.935,0,0,1-1.49.49l-2.18-.3a1.888,1.888,0,0,1-1.5-1.5L.013,16a2.015,2.015,0,0,1,.49-1.49l4.7-4.7a7.571,7.571,0,1,1,12.59,3.11Z" transform="translate(685.997 190.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0,2.3,2.3" transform="translate(690.89 205.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z" transform="translate(697 196)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(708 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                                    </span>
+                                </div>
+                                <h3 class="message invalid-message current-password-message">
+                                    <!-- error message or success message -->
+                                </h3>
+                            </div>
+                        
+                            <div class="new-password-box">
+                                <!-- ! ---------------------------- new password ----------------------------- ! -->
+                                <div class="input-group new-password-group">
+                                    <span class="input-group-icon eye new-password-eye">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g id="eye" transform="translate(-108 -188)"><path id="Vector" d="M7.16,3.58A3.58,3.58,0,1,1,3.58,0,3.576,3.576,0,0,1,7.16,3.58Z" transform="translate(116.42 196.42)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M9.785,16.55c3.53,0,6.82-2.08,9.11-5.68a5.326,5.326,0,0,0,0-5.19C16.6,2.08,13.315,0,9.785,0S2.965,2.08.675,5.68a5.326,5.326,0,0,0,0,5.19C2.965,14.47,6.255,16.55,9.785,16.55Z" transform="translate(110.215 191.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(132 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                                    </span>
+                                    <input type="password" class="form-input" name="new-password-input" id="new-password-input" placeholder="nothing" spellcheck="false">
+                                    <label for="new-password-input" class="input-label">new password</label>
+                                    <span class="input-group-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g id="key" transform="translate(-684 -188)"><path id="Vector" d="M17.793,12.923a7.575,7.575,0,0,1-7.6,1.87l-4.71,4.7a1.935,1.935,0,0,1-1.49.49l-2.18-.3a1.888,1.888,0,0,1-1.5-1.5L.013,16a2.015,2.015,0,0,1,.49-1.49l4.7-4.7a7.571,7.571,0,1,1,12.59,3.11Z" transform="translate(685.997 190.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0,2.3,2.3" transform="translate(690.89 205.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z" transform="translate(697 196)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(708 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                                    </span>
+                                </div>
+                                <h3 class="message invalid-message new-password-message">
+                                    <!-- error message or success message -->
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- ! ----------------------------- form border ----------------------------- ! -->
+                        <div class="form-border form-border-profile">
+                            <span class="form-border-text">Change profile</span>
+                        </div>
+
+                        <!-- ! ------------------------- change profile box -------------------------- ! -->
+                        <div class="change-profile-box">
+                            <!-- ! ------------------------- change profile box -------------------------- ! -->
+                            <div class="change-profile-input-box">
+                                <img src="../../content/img/profile/banana.png" class="change-profile-pic" alt="">
                             </div>
 
-                            <div class="user-btns-group">
-                                <button class="user-info-btn">
-                                    <svg id="Icon_ionic-md-information" data-name="Icon ionic-md-information" xmlns="http://www.w3.org/2000/svg" width="5.542" height="26.788" viewBox="0 0 5.542 26.788"><path id="Path_1399" data-name="Path 1399" d="M16.312,16.523h5.542V32.342H16.312Z" transform="translate(-16.312 -5.554)" fill="var(--main-color"/><path id="Path_1400" data-name="Path 1400" d="M16.312,9.844h5.542v5.542H16.312Z" transform="translate(-16.312 -9.844)" fill="var(--main-color)"/></svg>
-                                </button>
-                                <button class="user-unfollow-btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_profile-delete" data-name="vuesax/linear/profile-delete" transform="translate(-428 -252)"><g id="profile-delete"><path id="Vector" d="M2.82,0,0,2.82" transform="translate(443.59 270.09)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M2.82,2.82,0,0" transform="translate(443.59 270.09)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M4.6,8.87a1.818,1.818,0,0,0-.33,0,4.445,4.445,0,1,1,.33,0Z" transform="translate(435.56 254)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M6.825,8.63a9.15,9.15,0,0,1-5.01-1.38c-2.42-1.62-2.42-4.26,0-5.87a9.766,9.766,0,0,1,10.01,0" transform="translate(433.175 265.18)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(452 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>                                      
-                                    UnFollow
+                            <!-- ! -------------------------- change banner box -------------------------- ! -->
+                            <div class="change-banner-input-box">
+                                <img src="../../content/img/banner/banner.png" class="change-banner-pic" alt="">
+                            </div>    
+                        </div>
+
+                        <!--! ------------------------- submit change info -------------------------- ! -->
+                        <div class="submit-change-info-box">
+                            <div class="submit-change-info-btn-overlay">
+                                <button type="submit" class="submit-change-info-btn">
+                                    <svg id="edit" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path id="Vector" d="M8.236,0H6.406C1.83,0,0,1.83,0,6.406V11.9C0,16.472,1.83,18.3,6.406,18.3H11.9c4.576,0,6.406-1.83,6.406-6.406v-1.83" transform="translate(1.849 1.849)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M8.31,1.175,1.027,8.459a2.507,2.507,0,0,0-.61,1.22l-.4,2.782a1.317,1.317,0,0,0,1.571,1.571l2.782-.4a2.589,2.589,0,0,0,1.22-.61l7.284-7.284c1.257-1.257,1.849-2.717,0-4.566S9.568-.082,8.31,1.175Z" transform="translate(6.332 1.616)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0A6.6,6.6,0,0,0,4.566,4.566" transform="translate(13.638 3.796)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H22V22H0Z" fill="none" opacity="0"/></svg>
+                                    Update information
                                 </button>
                             </div>
                         </div>
-                    </div>
+
+                    </form>
                 </div>
             </section>
         </main>
     </div>
+
+    <script src="../../content/js/user-panel/change-info-section/change-info.js" type="module"></script>
 </body>
 </html>

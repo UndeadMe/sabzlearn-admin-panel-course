@@ -16,8 +16,6 @@
 .user-profile {
     width: 70px;
     height: 70px;
-    outline: 1px solid #F6DF00;
-    box-shadow: rgb(246, 223, 0, 0.6) 0px 8px 32px;
 }
 .user-profile img {
     width: 100%;

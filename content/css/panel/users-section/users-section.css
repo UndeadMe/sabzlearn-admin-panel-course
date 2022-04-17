@@ -1,3 +1,19 @@
+@import url(../user-pannel.css);
+@import url(../user-box/user-box.css);
+
+.users-section {
+    padding: 50px;
+    width: 100%;
+    transition: .4s;
+}
+.users-wrap {
+    margin-top: 30px;
+    height: 380px;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+/* ! ------------------------------- search bar ------------------------------- ! */
 .user-search-box {
     width: 100%;
     display: flex;
