@@ -175,6 +175,7 @@ body::after {
     padding: 50px;
     transform: translateY(-500px);
     transition: .5s;
+    overflow: hidden;
 }
 .forget-password-title {
     font-size: 2rem;
@@ -196,6 +197,10 @@ body::after {
 }
 .forget-pass-email-message {
     margin-top: 15px;
+}
+/* ! ------------------------ forget password email box ----------------------- ! */
+.forget-password-email-box {
+    transform: translateX(-500px);
 }
 .verify-submit-btn {
     width: 100%;
