@@ -1,5 +1,4 @@
 @import url(../user-pannel.css);
-@import url(../../form-border/form-border.css);
 @import url(../../forms/forms.css);
 
 .user-box-active-tab {
@@ -7,18 +6,39 @@
     left: 153px;
     background: var(--blue);
 }
+
 .change-info-section {
     padding: 36px 30px;
 }
+/* form border */
 .form-border {
+    width: 100%;
+    position: relative;
+    display: flex;
     justify-content: start;
     padding-left: 20px;
     margin-bottom: 25px;
 }
-.form-border-password, .form-border-profile {
+.form-border::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: var(--main-color);
+}
+.form-border span {
+    color: var(--main-color);
+    background: var(--white);
+    padding: 0 10px;
+    z-index: 2;
+}
+.form-border-password, .form-border-profile, .form-border-email {
     margin-top: 46px;
 }
-.change-name-box, .change-password-box, .change-profile-box {
+.change-name-box, .change-password-box, .change-profile-box, .change-email-box {
     display: flex;
     column-gap: 20px;
     margin-top: 20px;
@@ -26,7 +46,7 @@
 .change-profile-box {
     column-gap: 50px;
 }
-.first-name-box, .last-name-box, .current-password-box, .new-password-box {
+.first-name-box, .last-name-box, .current-password-box, .new-password-box, .email-box, .confirm-password-box {
     width: 100%;
 }
 .change-info-section {
