@@ -1,7 +1,7 @@
 @import url(../user-pannel.css);
 @import url(../../forms/forms.css);
 
-.user-box-active-tab {
+.active-tab {
     width: 180px;
     left: 153px;
     background: var(--blue);
@@ -10,6 +10,7 @@
 .change-info-section {
     padding: 36px 30px;
 }
+
 /* form border */
 .form-border {
     width: 100%;

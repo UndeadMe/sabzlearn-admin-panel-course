@@ -1,11 +1,11 @@
-.user-box-tabs {
+.tabs {
     display: flex;
     column-gap: 40px;
     padding: 20px 30px 15px 30px;
     border-bottom: 1px solid var(--white-700);
     position: relative;
 }
-.user-box-tab {
+.tab {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,10 +13,10 @@
     font-size: 1.3rem;
     cursor: pointer;
 }
-.user-box-tab a {
+.tab a {
     color: var(--primary-color);
 }
-.user-box-active-tab {
+.active-tab {
     position: absolute;
     bottom: -1px;
     left: 28px;

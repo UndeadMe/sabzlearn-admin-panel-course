@@ -7,7 +7,7 @@
 @import url(../custom/custom.css);
 @import url(user-card/user-card.css);
 @import url(header/header.css);
-@import url(user-box-tabs/user-box-tabs.css);
+@import url(tabs/tabs.css);
 
 body {
     background: #f0f0f0;
