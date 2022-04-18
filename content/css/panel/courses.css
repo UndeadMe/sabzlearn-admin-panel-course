@@ -1,5 +1,7 @@
 @import url(user-pannel.css);
 @import url(user-box/user-box.css);
+@import url(../modal/modal.css);
+@import url(../forms/forms.css);
 
 .active-tab {
     width: 150px;
@@ -55,17 +57,20 @@
 .course-description {
     width: 100%;
     display: flex;
-    column-gap: 20px;
+    column-gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 10px 20px;
     background-color: var(--white-900);
 }
-.course-price, .course-students {
+.course-price, .course-students, .course-category {
     display: flex;
     align-items: center;
     column-gap: 5px;
     color: var(--dark-blue);
+}
+.course-students {
+    margin-left: auto;
 }
 /* ! --------------------------- add new course box --------------------------- ! */
 .add-new-course-box {
