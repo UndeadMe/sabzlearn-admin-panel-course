@@ -7,7 +7,7 @@
     <title>Panel - Banana <!-- admin username --></title>
 
     <!-- ! -------------------------------- links -------------------------------- ! -->
-    <link rel="stylesheet" href="content/css/panel/change-info.css">
+    <link rel="stylesheet" href="content/css/panel/sessions.css">
 </head>
 <body>
     <!-- ! ------------------------------ container ------------------------------ ! -->
@@ -112,166 +112,106 @@
                     </div>
                 </div>
 
-                <!-- ! ------------------------- change info section ------------------------- ! -->
-                <div class="change-info-section">
-                    <!-- ! -------------------------- change info form --------------------------- ! -->
-                    <form action="" method="" id="change-info-form">
-                        
-                        <!-- ! ----------------------------- form border ----------------------------- ! -->
-                        <div class="form-border">
-                            <span class="form-border-text">Change name</span>
-                        </div>
-                        
-                        <!-- ! --------------------------- change name box --------------------------- ! -->
-                        <div class="change-name-box">
-                            <div class="first-name-box">
-                                <!-- ! ----------------------------- first name ------------------------------ ! -->
-                                <div class="input-group invalid first-name-group"> <!-- add valid class or invalid class to change color of input -->
-                                    <input type="text" class="form-input" name="first-name-input" id="first-name-input" placeholder="nothing" spellcheck="false">
-                                    <label for="first-name-input" class="input-label">first name</label>
+                <!-- ! -------------------------- sessions section --------------------------- ! -->
+                <div class="sessions-section">
+                    <!-- ! ---------------------------- sessions form ---------------------------- ! -->
+                    <form action="" method="" id="sessions-form">                        
+                        <!-- ! ---------------------- session name and time box ---------------------- ! -->
+                        <div class="session-name-time-box">
+                            <div class="session-name-box w-100">
+                                <!-- ! ---------------------------- session name ----------------------------- ! -->
+                                <div class="input-group invalid session-name-group"> <!-- add valid class or invalid class to change color of input -->
+                                    <input type="text" class="form-input" name="session-name-input" id="session-name-input" placeholder="nothing" spellcheck="false">
+                                    <label for="session-name-input" class="input-label">session name</label>
                                     <span class="input-group-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_text" data-name="vuesax/linear/text" transform="translate(-300 -252)"><g id="text"><path id="Vector" d="M0,3.89V2.07A2.068,2.068,0,0,1,2.07,0H16.59a2.068,2.068,0,0,1,2.07,2.07V3.89" transform="translate(302.67 255.28)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,16.61V0" transform="translate(312 256.11)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H7.88" transform="translate(308.06 272.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(324 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
                                 </div>
-                                <h3 class="message invalid-message first-name-message"> <!-- valid-message class or invalid-message class  -->
+                                <h3 class="message invalid-message session-name-message"> <!-- valid-message class or invalid-message class  -->
                                     <!-- error message or success message -->
                                     invalid message
                                 </h3>
                             </div>
                         
-                            <div class="last-name-box">
-                                <!-- ! ------------------------------ last name ------------------------------ ! -->
-                                <div class="input-group last-name-group valid"> <!-- add valid class or invalid class to change color of input -->
-                                    <input type="text" class="form-input" name="last-name-input" id="last-name-input" placeholder="nothing" spellcheck="false">
-                                    <label for="last-name-input" class="input-label">last name</label>
+                            <div class="session-time-box w-100">
+                                <!-- ! -------------------------- session time box --------------------------- ! -->
+                                <div class="input-group session-time-group valid"> <!-- add valid class or invalid class to change color of input -->
+                                    <input type="text" class="form-input" name="session-time-input" id="session-time-input" placeholder="nothing" spellcheck="false">
+                                    <label for="session-time-input" class="input-label">session time</label>
                                     <span class="input-group-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_smallcaps" data-name="vuesax/linear/smallcaps" transform="translate(-364 -252)"><g id="smallcaps"><path id="Vector" d="M0,3.36V1.85A1.852,1.852,0,0,1,1.85,0H14.77a1.852,1.852,0,0,1,1.85,1.85V3.36" transform="translate(365.99 254.57)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,14.78V0" transform="translate(374.3 255.32)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H5.58" transform="translate(370.9 270.1)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H7.01A1.319,1.319,0,0,1,8.33,1.32v.8" transform="translate(377.68 262.34)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,10.56V0" transform="translate(380.08 262.87)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-6" data-name="Vector" d="M0,0H4.28" transform="translate(377.94 273.43)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-7" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(388 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_timer" data-name="vuesax/linear/timer" transform="translate(-108 -188)"><g id="timer"><path id="Vector" d="M9.749,0H3.269c-3.76,0-4.05,3.38-2.02,5.22l10.52,9.56C13.8,16.62,13.509,20,9.749,20H3.269c-3.76,0-4.05-3.38-2.02-5.22l10.52-9.56C13.8,3.38,13.509,0,9.749,0Z" transform="translate(113.491 190)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(108 188)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
                                 </div>
-                                <h3 class="message valid-message last-name-message"> <!-- valid-message class or invalid-message class  -->
+                                <h3 class="message valid-message session-time-message"> <!-- valid-message class or invalid-message class  -->
                                     <!-- error message or success message -->
                                     valid message
                                 </h3>
                             </div>
                         </div>
 
-                        <!-- ! ----------------------------- form border ----------------------------- ! -->
-                        <div class="form-border form-border-password">
-                            <span class="form-border-text">Change password</span>
-                        </div>
-
-                        <!-- ! ------------------------- change password box ------------------------- ! -->
-                        <div class="change-password-box">
-                            <div class="current-password-box">
-                                <!-- ! -------------------------- current password --------------------------- ! -->
-                                <div class="input-group current-password-group invalid"> <!-- add valid class or invalid class to change color of input -->
-                                    <span class="input-group-icon eye current-password-eye">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g id="eye" transform="translate(-108 -188)"><path id="Vector" d="M7.16,3.58A3.58,3.58,0,1,1,3.58,0,3.576,3.576,0,0,1,7.16,3.58Z" transform="translate(116.42 196.42)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M9.785,16.55c3.53,0,6.82-2.08,9.11-5.68a5.326,5.326,0,0,0,0-5.19C16.6,2.08,13.315,0,9.785,0S2.965,2.08.675,5.68a5.326,5.326,0,0,0,0,5.19C2.965,14.47,6.255,16.55,9.785,16.55Z" transform="translate(110.215 191.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(132 212) rotate(180)" fill="none" opacity="0"/></g></svg>
-                                    </span>
-                                    <input type="password" class="form-input" name="current-password-input" id="current-password-input" placeholder="nothing" spellcheck="false">
-                                    <label for="current-password-input" class="input-label">current password</label>
+                        <!-- ! ---------------- session price and session select box ----------------- ! -->
+                        <div class="session-price-select-course-box mt-3">
+                            <!-- ! -------------------------- session price box -------------------------- ! -->
+                            <div class="session-price-box w-100">
+                                <!-- ! ---------------------------- session name ----------------------------- ! -->
+                                <div class="input-group session-price-group valid"> <!-- add valid class or invalid class to change color of input -->
+                                    <input type="number" class="form-input" name="session-price-input" id="session-price-input" placeholder="nothing" spellcheck="false">
+                                    <label for="session-price-input" class="input-label">session price</label>
                                     <span class="input-group-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g id="key" transform="translate(-684 -188)"><path id="Vector" d="M17.793,12.923a7.575,7.575,0,0,1-7.6,1.87l-4.71,4.7a1.935,1.935,0,0,1-1.49.49l-2.18-.3a1.888,1.888,0,0,1-1.5-1.5L.013,16a2.015,2.015,0,0,1,.49-1.49l4.7-4.7a7.571,7.571,0,1,1,12.59,3.11Z" transform="translate(685.997 190.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0,2.3,2.3" transform="translate(690.89 205.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z" transform="translate(697 196)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(708 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_card-pos" data-name="vuesax/linear/card-pos" transform="translate(-428 -508)"><g id="card-pos"><path id="Vector" d="M0,11.95,11.95,0" transform="translate(431.93 511.929)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,1.2,1.2,0" transform="translate(439.101 525.079)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,2.39,2.39,0" transform="translate(441.793 521.199)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M1.6,8.238,8.241,1.6c2.12-2.12,3.18-2.13,5.28-.03l4.91,4.91c2.1,2.1,2.09,3.16-.03,5.28l-6.64,6.64c-2.12,2.12-3.18,2.13-5.28.03l-4.91-4.91C-.529,11.418-.529,10.368,1.6,8.238Z" transform="translate(430 510.001)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,0H20" transform="translate(430 529.999)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-6" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(428 508)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
                                 </div>
-                                <h3 class="message invalid-message current-password-message"> <!-- valid-message class or invalid-message class  -->
+                                <h3 class="message valid-message session-price-message"> <!-- valid-message class or invalid-message class  -->
                                     <!-- error message or success message -->
                                     invalid message
                                 </h3>
                             </div>
                         
-                            <div class="confirm-password-box">
-                                <!-- ! -------------------------- confirm password --------------------------- ! -->
-                                <div class="input-group confirm-password-group valid"> <!-- add valid class or invalid class to change color of input -->
-                                    <span class="input-group-icon eye confirm-password-eye">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g id="eye" transform="translate(-108 -188)"><path id="Vector" d="M7.16,3.58A3.58,3.58,0,1,1,3.58,0,3.576,3.576,0,0,1,7.16,3.58Z" transform="translate(116.42 196.42)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M9.785,16.55c3.53,0,6.82-2.08,9.11-5.68a5.326,5.326,0,0,0,0-5.19C16.6,2.08,13.315,0,9.785,0S2.965,2.08.675,5.68a5.326,5.326,0,0,0,0,5.19C2.965,14.47,6.255,16.55,9.785,16.55Z" transform="translate(110.215 191.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(132 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                            <!-- ! ---------------------- session select course box ---------------------- ! -->
+                            <div class="session-select-course-box w-100">
+                                <!-- ! -------------------------- session dropdown box ------------------- ! -->
+                                <div class="session-dropdown-box    valid"> <!-- add active to open the session dropdown menu box --> <!-- add valid class or invalid class to change color of input -->
+                                    <span class="session-dropdown-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_book" data-name="vuesax/linear/book" transform="translate(-556 -188)"><g id="book"><path id="Vector" d="M20,14.078V2.008A1.97,1.97,0,0,0,17.83.018h-.06a18.851,18.851,0,0,0-7.07,2.37l-.17.11a1.108,1.108,0,0,1-1.06,0l-.25-.15A18.757,18.757,0,0,0,2.16.008,1.967,1.967,0,0,0,0,2v12.08a2.055,2.055,0,0,0,1.74,1.98l.29.04a25.693,25.693,0,0,1,7.44,2.44l.04.02a1.08,1.08,0,0,0,.96,0,25.461,25.461,0,0,1,7.46-2.46l.33-.04A2.055,2.055,0,0,0,20,14.078Z" transform="translate(558 190.662)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0V15" transform="translate(568 193.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M2.25,0H0" transform="translate(561.5 196.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M3,0H0" transform="translate(561.5 199.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(580 212) rotate(180)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
-                                    <input type="password" class="form-input" name="confirm-password-input" id="confirm-password-input" placeholder="nothing" spellcheck="false">
-                                    <label for="confirm-password-input" class="input-label">confirm password</label>
-                                    <span class="input-group-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g id="key" transform="translate(-684 -188)"><path id="Vector" d="M17.793,12.923a7.575,7.575,0,0,1-7.6,1.87l-4.71,4.7a1.935,1.935,0,0,1-1.49.49l-2.18-.3a1.888,1.888,0,0,1-1.5-1.5L.013,16a2.015,2.015,0,0,1,.49-1.49l4.7-4.7a7.571,7.571,0,1,1,12.59,3.11Z" transform="translate(685.997 190.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0,2.3,2.3" transform="translate(690.89 205.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z" transform="translate(697 196)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(708 212) rotate(180)" fill="none" opacity="0"/></g></svg>
+                                    <span class="session-dropdown-text">Javascript</span> <!-- session text, where you should append text of items -->
+                                    <span class="session-dropdown-toggle-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_arrow-up" data-name="vuesax/linear/arrow-up" transform="translate(-556 -316)"><g id="arrow-up"><path id="Vector" d="M6.388,11.993H3.718c-3.31,0-4.67-2.35-3.01-5.22l1.34-2.31,1.34-2.31c1.66-2.87,4.37-2.87,6.03,0l1.34,2.31,1.34,2.31c1.66,2.87.3,5.22-3.01,5.22Z" transform="translate(561.612 322.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(580 340) rotate(180)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
+    
+                                    <!-- ! ---------------------- session dropdown menu box ---------------------- ! -->
+                                    <ul class="session-dropdown-menu-box">
+                                        <li class="session-dropdown-menu-item">red banana</li>
+                                        <li class="session-dropdown-menu-item">red banana</li>
+                                        <li class="session-dropdown-menu-item">red banana</li>
+                                        <li class="session-dropdown-menu-item">red banana</li>
+                                        <li class="session-dropdown-menu-item">red banana</li>
+                                        <li class="session-dropdown-menu-item">golden banana</li>
+                                        <li class="session-dropdown-menu-item">black banana</li>
+                                    </ul>
                                 </div>
-                                <h3 class="message valid-message confirm-password-message"> <!-- valid-message class or invalid-message class  -->
+                                <h3 class="message valid-message session-time-message"> <!-- valid-message class or invalid-message class  -->
                                     <!-- error message or success message -->
-                                    valid message
-                                </h3>
-                            </div>
-
-                            <div class="new-password-box">
-                                <!-- ! ---------------------------- new password ----------------------------- ! -->
-                                <div class="input-group new-password-group invalid"> <!-- add valid class or invalid class to change color of input -->
-                                    <span class="input-group-icon eye new-password-eye">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g id="eye" transform="translate(-108 -188)"><path id="Vector" d="M7.16,3.58A3.58,3.58,0,1,1,3.58,0,3.576,3.576,0,0,1,7.16,3.58Z" transform="translate(116.42 196.42)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M9.785,16.55c3.53,0,6.82-2.08,9.11-5.68a5.326,5.326,0,0,0,0-5.19C16.6,2.08,13.315,0,9.785,0S2.965,2.08.675,5.68a5.326,5.326,0,0,0,0,5.19C2.965,14.47,6.255,16.55,9.785,16.55Z" transform="translate(110.215 191.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(132 212) rotate(180)" fill="none" opacity="0"/></g></svg>
-                                    </span>
-                                    <input type="password" class="form-input" name="new-password-input" id="new-password-input" placeholder="nothing" spellcheck="false">
-                                    <label for="new-password-input" class="input-label">new password</label>
-                                    <span class="input-group-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g id="key" transform="translate(-684 -188)"><path id="Vector" d="M17.793,12.923a7.575,7.575,0,0,1-7.6,1.87l-4.71,4.7a1.935,1.935,0,0,1-1.49.49l-2.18-.3a1.888,1.888,0,0,1-1.5-1.5L.013,16a2.015,2.015,0,0,1,.49-1.49l4.7-4.7a7.571,7.571,0,1,1,12.59,3.11Z" transform="translate(685.997 190.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0,2.3,2.3" transform="translate(690.89 205.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M3,1.5A1.5,1.5,0,1,1,1.5,0,1.5,1.5,0,0,1,3,1.5Z" transform="translate(697 196)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(708 212) rotate(180)" fill="none" opacity="0"/></g></svg>
-                                    </span>
-                                </div>
-                                <h3 class="message invalid-message new-password-message"> <!-- valid-message class or invalid-message class  -->
-                                    <!-- error message or success message -->
-                                    invalid message
+                                    valid 
                                 </h3>
                             </div>
                         </div>
 
-                        <!-- ! ----------------------------- form border ----------------------------- ! -->
-                        <div class="form-border form-border-email">
-                            <span class="form-border-text">Change Email</span>
-                        </div>
-                        
-                        <!-- ! -------------------------- change email box --------------------------- ! -->
-                        <div class="change-email-box">
-                            <div class="email-box">
-                                <!-- ! -------------------------------- email -------------------------------- ! -->
-                                <div class="input-group invalid email-group"> <!-- add valid class or invalid class to change color of input -->
-                                    <input type="text" class="form-input" name="email-input" id="email-input" placeholder="nothing" spellcheck="false">
-                                    <label for="email-input" class="input-label">Email</label>
-                                    <span class="input-group-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_global" data-name="vuesax/linear/global" transform="translate(-172 -252)"><g id="global"><path id="Vector" d="M20,10A10,10,0,1,1,10,0,10,10,0,0,1,20,10Z" transform="translate(174 254)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M.463,0h1a28.424,28.424,0,0,0,0,18h-1" transform="translate(179.538 255)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0A28.424,28.424,0,0,1,0,18" transform="translate(187 255)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,1V0A28.424,28.424,0,0,0,18,0V1" transform="translate(175 267)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,1.463a28.424,28.424,0,0,1,18,0" transform="translate(175 259.538)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-6" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(196 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
-                                    </span>
-                                </div>
-                                <h3 class="message invalid-message email-message"> <!-- valid-message class or invalid-message class  -->
-                                    <!-- error message or success message -->
-                                    invalid message
-                                </h3>
-                            </div>
+                        <!-- ! ----------------- session free or not free check box ------------------ ! -->
+                        <div class="session-check-free-box mt-3">
+                            free:
+                            <label class="session-check-free-label">
+                                <input checked="checked" type="checkbox">
+                                <div class="checkmark"></div>
+                            </label>
                         </div>
 
-                        <!-- ! ----------------------------- form border ----------------------------- ! -->
-                        <div class="form-border form-border-profile">
-                            <span class="form-border-text">Change profile</span>
-                        </div>
-
-                        <!-- ! ------------------------- change profile box -------------------------- ! -->
-                        <div class="change-profile-box">
-                            <!-- ! ------------------------- change profile box -------------------------- ! -->
-                            <div class="change-profile-input-box">
-                                <img src="content/img/profile/banana.png" class="change-profile-pic" alt="">
-                                <label for="upload-profile-input" class="upload-profile-input-label">
-                                    <input type="file" id="upload-profile-input" name="">
-                                </label>
-                            </div>
-
-                            <!-- ! -------------------------- change banner box -------------------------- ! -->
-                            <div class="change-banner-input-box">
-                                <img src="content/img/banner/banner.png" class="change-banner-pic" alt="">
-                                <label for="upload-banner-input" class="upload-banner-input-label">
-                                    <input type="file" id="upload-banner-input" name="">
-                                </label>
-                            </div>
-                        </div>
-
-                        <!--! ------------------------- submit change info -------------------------- ! -->
-                        <div class="submit-change-info-box">
-                            <div class="submit-change-info-btn-overlay">
-                                <button type="submit" class="submit-change-info-btn">
-                                    <svg id="edit" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path id="Vector" d="M8.236,0H6.406C1.83,0,0,1.83,0,6.406V11.9C0,16.472,1.83,18.3,6.406,18.3H11.9c4.576,0,6.406-1.83,6.406-6.406v-1.83" transform="translate(1.849 1.849)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M8.31,1.175,1.027,8.459a2.507,2.507,0,0,0-.61,1.22l-.4,2.782a1.317,1.317,0,0,0,1.571,1.571l2.782-.4a2.589,2.589,0,0,0,1.22-.61l7.284-7.284c1.257-1.257,1.849-2.717,0-4.566S9.568-.082,8.31,1.175Z" transform="translate(6.332 1.616)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0A6.6,6.6,0,0,0,4.566,4.566" transform="translate(13.638 3.796)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H22V22H0Z" fill="none" opacity="0"/></svg>
-                                    Update information
-                                </button>
-                            </div>
+                        <!-- ! ------------------------- add new session box ------------------------- ! -->
+                        <div class="add-new-sesssion-box w-100 mt-30">
+                            <button type="submit" class="add-new-session-btn mt-3">
+                                <svg id="edit" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path id="Vector" d="M8.236,0H6.406C1.83,0,0,1.83,0,6.406V11.9C0,16.472,1.83,18.3,6.406,18.3H11.9c4.576,0,6.406-1.83,6.406-6.406v-1.83" transform="translate(1.849 1.849)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M8.31,1.175,1.027,8.459a2.507,2.507,0,0,0-.61,1.22l-.4,2.782a1.317,1.317,0,0,0,1.571,1.571l2.782-.4a2.589,2.589,0,0,0,1.22-.61l7.284-7.284c1.257-1.257,1.849-2.717,0-4.566S9.568-.082,8.31,1.175Z" transform="translate(6.332 1.616)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0A6.6,6.6,0,0,0,4.566,4.566" transform="translate(13.638 3.796)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H22V22H0Z" fill="none" opacity="0"/></svg>
+                                add new session
+                            </button>
                         </div>
 
                     </form>
