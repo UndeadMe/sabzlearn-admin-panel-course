@@ -1,0 +1,66 @@
+.modal-container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+    z-index: 9999;
+}
+.modal-container.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-container::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #080909;
+}
+.modal-content {
+    width: 450px;
+    background-color: var(--white);
+    z-index: 1;
+    padding: 30px 40px;
+}
+.modal-title {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    line-height: 35px;
+    text-transform: capitalize;
+}
+.btn-groups {
+    display: flex;
+    column-gap: 20px;
+}
+.accept-btn, .unaccept-btn {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+.accept-btn {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.accept-btn:hover {
+    filter: brightness(.7);
+}
+.unaccept-btn {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
+.unaccept-btn:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}

@@ -10,6 +10,70 @@
     <link rel="stylesheet" href="content/css/panel/users.css">
 </head>
 <body>
+    <!-- ! -------------------------------- modal -------------------------------- ! -->
+    <div class="modal-container"> <!-- ! add visible class to be visible ! -->
+        <div class="modal-content">
+            <!-- ! remove user content ! -->
+            <!-- <h1 class="modal-title">are you sure you want delete this user ?</h1>
+            <div class="btn-groups">
+                <button class="unaccept-btn">No</button>
+                <button class="accept-btn">Yes</button>
+            </div> -->
+
+            <!-- ! edit information of user content ! -->
+            <h1 class="modal-title">Fill out the following fields</h1>
+            <form action="" class="edit-user-form">
+                <!-- ! ---------------------------- edit username ---------------------------- ! -->
+                <div>
+                    <div class="input-group invalid username-group"> <!-- add valid class or invalid class to change color of input -->
+                        <input type="text" class="form-input" name="username-input" id="username-input" placeholder="nothing" spellcheck="false">
+                        <label for="username-input" class="input-label">username</label>
+                        <span class="input-group-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_text" data-name="vuesax/linear/text" transform="translate(-300 -252)"><g id="text"><path id="Vector" d="M0,3.89V2.07A2.068,2.068,0,0,1,2.07,0H16.59a2.068,2.068,0,0,1,2.07,2.07V3.89" transform="translate(302.67 255.28)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,16.61V0" transform="translate(312 256.11)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H7.88" transform="translate(308.06 272.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(324 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
+                        </span>
+                    </div>
+                    <h3 class="message invalid-message username-message"> <!-- valid-message class or invalid-message class  -->
+                        <!-- error message or success message -->
+                        invalid message
+                    </h3>
+                </div>
+
+                <!-- ! --------------------------- edit first name --------------------------- ! -->
+                <div class="mt-3">
+                    <div class="input-group invalid first-name-group"> <!-- add valid class or invalid class to change color of input -->
+                        <input type="text" class="form-input" name="first-name-input" id="first-name-input" placeholder="nothing" spellcheck="false">
+                        <label for="first-name-input" class="input-label">first name</label>
+                        <span class="input-group-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_text" data-name="vuesax/linear/text" transform="translate(-300 -252)"><g id="text"><path id="Vector" d="M0,3.89V2.07A2.068,2.068,0,0,1,2.07,0H16.59a2.068,2.068,0,0,1,2.07,2.07V3.89" transform="translate(302.67 255.28)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,16.61V0" transform="translate(312 256.11)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H7.88" transform="translate(308.06 272.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(324 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
+                        </span>
+                    </div>
+                    <h3 class="message invalid-message first-name-message"> <!-- valid-message class or invalid-message class  -->
+                        <!-- error message or success message -->
+                        invalid message
+                    </h3>
+                </div>
+
+                <!-- ! --------------------------- edit last name ---------------------------- ! -->
+                <div class="mt-3">
+                    <div class="input-group invalid last-name-group"> <!-- add valid class or invalid class to change color of input -->
+                        <input type="text" class="form-input" name="last-name-input" id="last-name-input" placeholder="nothing" spellcheck="false">
+                        <label for="last-name-input" class="input-label">last name</label>
+                        <span class="input-group-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_text" data-name="vuesax/linear/text" transform="translate(-300 -252)"><g id="text"><path id="Vector" d="M0,3.89V2.07A2.068,2.068,0,0,1,2.07,0H16.59a2.068,2.068,0,0,1,2.07,2.07V3.89" transform="translate(302.67 255.28)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,16.61V0" transform="translate(312 256.11)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0H7.88" transform="translate(308.06 272.72)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(324 276) rotate(180)" fill="none" opacity="0"/></g></g></svg>
+                        </span>
+                    </div>
+                    <h3 class="message invalid-message last-name-message"> <!-- valid-message class or invalid-message class  -->
+                        <!-- error message or success message -->
+                        invalid message
+                    </h3>
+                </div>
+
+                <button type="submit" class="accept-btn mt-3">update information</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ! ------------------------------ container ------------------------------ ! -->
     <div class="container">
         <!-- ! ------------------------------- header -------------------------------- ! -->
         <header class="header">

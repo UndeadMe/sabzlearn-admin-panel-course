@@ -14,9 +14,6 @@
 .w-100 {
     width: 100%;
 }
-.mt-3 {
-    margin-top: 30px;
-}
 /* ! -------------------------------- sessions -------------------------------- ! */
 .session-name-time-box, .session-price-select-course-box {
     display: flex;

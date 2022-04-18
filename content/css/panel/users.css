@@ -1,5 +1,7 @@
 @import url(user-pannel.css);
 @import url(user-box/user-box.css);
+@import url(../modal/modal.css);
+@import url(../forms/forms.css);
 
 .users-section {
     padding: 50px;
@@ -41,7 +43,7 @@
     width: 1px;
     height: 60%;
     background: var(--white-800);
-    z-index: 9999;
+    z-index: 1;
 }
 .search-bar-icon, .search-config-icon {
     display: flex;
