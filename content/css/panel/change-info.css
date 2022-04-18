@@ -1,5 +1,5 @@
-@import url(../user-pannel.css);
-@import url(../../forms/forms.css);
+@import url(user-pannel.css);
+@import url(../forms/forms.css);
 
 .active-tab {
     width: 180px;

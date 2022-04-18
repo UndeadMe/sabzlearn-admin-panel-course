@@ -1,5 +1,5 @@
-@import url(../user-pannel.css);
-@import url(../user-box/user-box.css);
+@import url(user-pannel.css);
+@import url(user-box/user-box.css);
 
 .active-tab {
     width: 150px;
