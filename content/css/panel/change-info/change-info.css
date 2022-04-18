@@ -9,6 +9,9 @@
 
 .change-info-section {
     padding: 36px 30px;
+    max-height: 555px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* form border */
@@ -49,11 +52,6 @@
 }
 .first-name-box, .last-name-box, .current-password-box, .new-password-box, .email-box, .confirm-password-box {
     width: 100%;
-}
-.change-info-section {
-    max-height: 555px;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 .change-profile-input-box, .change-banner-input-box {
     position: relative;

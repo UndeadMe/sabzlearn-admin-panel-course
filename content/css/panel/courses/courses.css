@@ -1,0 +1,89 @@
+@import url(../user-pannel.css);
+@import url(../user-box/user-box.css);
+
+.active-tab {
+    width: 150px;
+    left: 345px;
+    background: var(--blue);
+}
+.courses-section {
+    position: relative;
+}
+.courses-wrap {
+    padding: 36px 30px 120px 30px;
+    max-height: 555px;
+    height: 555px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* ! ---------------------------- course box style ---------------------------- ! */
+.course-box {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.course-box:not(:first-child) {
+    margin-top: 30px;
+}
+.course-img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+.course-right-section-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.course-explanation {
+    padding: 20px;
+}
+.course-title {
+    font-size: 1.4rem;
+    color: var(--yellow);
+}
+.course-text {
+    margin-top: 10px;
+    line-height: 19px;
+    font-size: 0.9rem;
+    color: gray;
+}
+.course-description {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--white-900);
+}
+.course-price, .course-students {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    color: var(--dark-blue);
+}
+/* ! --------------------------- add new course box --------------------------- ! */
+.add-new-course-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+    background: var(--white-900);
+}
+.add-new-course-btn {
+    background: var(--blue);
+    border: none;
+    outline: none;
+    color: var(--white);
+    box-shadow: rgb(0 156 240 / 40%) 0px 8px 24px;
+    padding: 15px 20px ;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
