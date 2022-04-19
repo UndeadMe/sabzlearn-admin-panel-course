@@ -1,0 +1,105 @@
+@import url(custom/custom.css);
+@import url(forms/forms.css);
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(../img/login-overlay/login-overlay.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    inset: -1;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: var(--blue-to-black-gradient);
+    opacity: 0.5;
+}
+
+/* ! ---------------------------------- wrap ---------------------------------- ! */
+.wrap {
+    position: relative;
+    width: 450px;
+    background: var(--white);
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap::before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93%;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 0 0 50px 50px;
+    z-index: -1;
+}
+.wrap-title {
+    font-size: 1.8rem;
+}
+/* ! ---------------------------------- form ---------------------------------- ! */
+.form-login {
+    width: 100%;
+    padding: 0 9px;
+    margin-top: 50px;
+}
+.password-group {
+    margin-top: 25px;
+}
+/* ! ------------------------- forget password section ------------------------ ! */
+.forget-pass-section {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--dark-blue);
+}
+/* ! --------------------------- login with border -------------------------- ! */
+.sign-in-with-border-box {
+    margin-top: 40px;
+}
+/* ! ------------------------------- submit btn ------------------------------- ! */
+.submit-form-btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
+    transition: .4s;
+}
+.submit-form-btn:disabled {
+    background: var(--black);
+    cursor: no-drop;
+    box-shadow: none;
+}
+/* ! ------------------------------- media query ------------------------------ ! */
+@media screen and ( max-height: 666px ) {
+    body {
+        padding: 100px 0;
+    }
+}
