@@ -27,7 +27,7 @@ you can do something interesting on the users:
 # panel admin - information
 ![Screenshot 2022-04-21 014201](https://user-images.githubusercontent.com/89915857/164323796-f7d6a292-6ba2-4191-9d1d-cece59769bf1.png)
 this page is for information of the admin. you can change your information as a admin. but <br> 
-what do you can change as a admin ? 
+what can you change as a admin ? 
 - first name
 - last name
 - password
