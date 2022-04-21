@@ -5,8 +5,8 @@
 ![Screenshot 2022-04-21 011214](https://user-images.githubusercontent.com/89915857/164319276-6399e8e5-7a0f-453b-84a9-aec145199423.png)
 - Features of Login page:
   - login form
-  - username input
-  - password input
+  - username field
+  - password field
   - password eye icon
 # panel admin
 all the pages have the following components:
@@ -34,4 +34,25 @@ what can you change as a admin ?
 - email
 - profile 
 - banner 
+# panel admin - courses
+![Screenshot 2022-04-21 122554](https://user-images.githubusercontent.com/89915857/164407323-c8182f7b-9bfa-415f-a642-6fdc42c7244a.png)
+as you know this page is for courses of website. a courses box has some information about the course like:
+- course title
+- course text
+- course price
+- course category
+- course number of students
 
+you can add a new course by a button. before you you have yo complete following fields:
+![Screenshot 2022-04-21 123131](https://user-images.githubusercontent.com/89915857/164408398-62d397de-1d32-4b93-aa2e-b9d8c23c2eca.png)
+- course title
+- course price
+- course category
+# panel admin - sessions
+![Screenshot 2022-04-21 123343](https://user-images.githubusercontent.com/89915857/164408790-3e8e42cd-ba3d-41db-a49a-13deab4c10ce.png)
+this page is for add new session to a course.you should complete the fields to add a new session.you have some information to complete.
+- session name 
+- session time
+- session price
+- a dropdown box for choose a course
+- a checkbox for choose course be free or not
