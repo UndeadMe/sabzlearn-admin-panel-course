@@ -121,8 +121,8 @@
     display: block;
 }
 .checkmark:after {
-    left: 0.45em;
-    top: 0.15em;
+    left: 9px;
+    top: 3px;
     width: 0.14em;
     height: 0.5em;
     border: solid white;
