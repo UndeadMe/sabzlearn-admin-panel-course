@@ -10,6 +10,9 @@
 .sessions-section {
     padding: 36px 30px;
     height: 555px;
+    max-height: 555px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .w-100 {
     width: 100%;
@@ -141,4 +144,46 @@
     border: none;
     cursor: pointer;
     box-shadow: rgb(0, 156, 240, 0.4) 0px 8px 24px;
+}
+/* ! ------------------------------ all sessions ------------------------------ ! */
+.sessions {
+    width: 100%;
+    margin-top: 50px;
+}
+.session-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: .4s;
+    border: 1px solid var(--white-700);
+    border-bottom: none;
+    justify-content: space-between;
+}
+.session-box:last-child {
+    border: 1px solid var(--white-700);
+}
+.session-box div:first-child, .session-box div:last-child {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.session-box:hover {
+    box-shadow: var(--shadow);
+}
+.session-name-title {
+    color: var(--primary-color);
+}
+.session-price-badge {
+    font-size: 0.8rem;
+    padding: 7px;
+    border-radius: 20px;
+    background: var(--red);
+    color: var(--white);
+}
+.session-category {
+    font-size: 0.8rem;
+}
+.session-time {
+    width: 100px;
+    height: 100%;
 }
